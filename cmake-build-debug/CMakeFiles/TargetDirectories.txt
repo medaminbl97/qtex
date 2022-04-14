@@ -1,0 +1,4 @@
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex_autogen.dir
