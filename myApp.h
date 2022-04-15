@@ -16,13 +16,15 @@
 class myApp : public QWidget {
     Q_OBJECT
 private:
-    Box *b;
+    Box *b,*b1;
+    mytimer *timer;
 public:
-    explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr){ setWindowTitle(title.c_str());
+    explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr),timer(new mytimer){ setWindowTitle(title.c_str());
         setMinimumSize(width,hight);
         resize(900,600);
         setPalette(QPalette(QColor(Qt::white)));
-    b = new Box();}
+    b = new Box(100);
+    b1 = new Box(300);}
 
 public:
     void mousePressEvent(QMouseEvent* event) override;

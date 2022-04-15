@@ -1,15 +1,29 @@
 #pragma once
 #include <QPainter>
+#include <cmath>
+#include "myTimer.h"
 
 
 
 class Box {
 public:
-    int b,h;
+
+    int betrag;
     int x,y;
+    double alpha = 0;
+    mytimer *timer;
+
 
 public:
-    Box(int b = 100, int h = 100): b(b), h(h) , x(0), y(0) {}
-    void show(QPainter * painter){painter->drawRect(x,y,x+b,y+h);}
+    Box(int betrag = 100): betrag(betrag), timer(new mytimer) {timer->tick();}
+    void rotate(float v = 0.001){
+        if(timer->getduration() >= v){
+            timer->tick();
+        x = betrag*cos(alpha);
+        y = betrag*sin(alpha);
+        alpha += 0.01;
+        }
+    }
+    void show(QPainter * painter){painter->drawLine(0,0,x,y);}
 
 };

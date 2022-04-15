@@ -9,26 +9,14 @@
 /Users/mohamedaminebellil/Desktop/PProjects/qtex/Box.h
 QPainter
 -
+cmath
+-
+myTimer.h
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/myTimer.h
 
-/Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp
-iostream
--
-QApplication
--
-QWidget
--
-QWindow
--
+/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp
 myApp.h
 /Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.h
-ctime
--
-chrono
--
-thread
--
-iomanip
--
 
 /Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.h
 iostream

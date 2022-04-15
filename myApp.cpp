@@ -20,8 +20,23 @@ void myApp::keyPressEvent(QKeyEvent *event) {
 
 void myApp::paintEvent(QPaintEvent *event) {
     QPainter painter(this);
-    b->show(&painter);
-    b->h++;
-    painter.drawLine(10,10,100,100);
-    update();
+    painter.translate(QWidget::width()/2,QWidget::height()/2);
+    timer->tick();
+    //while (true) {
+        //if (timer->getduration() >= 0.1) {
+            b->rotate(0.05);
+            b->show(&painter);
+
+            b1->rotate(0.01);
+            b1->show(&painter);
+
+           // b->h++;
+
+
+            update();
+         //   break;
+        //}
+    //}
+
+
 }
