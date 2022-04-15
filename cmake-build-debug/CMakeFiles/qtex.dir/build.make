@@ -79,44 +79,44 @@ CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/qtex_autogen/mocs_compilation.cpp -o CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/qtex.dir/main.cpp.o: CMakeFiles/qtex.dir/flags.make
-CMakeFiles/qtex.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qtex.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtex.dir/main.cpp.o -c /Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp
+CMakeFiles/qtex.dir/test.cpp.o: CMakeFiles/qtex.dir/flags.make
+CMakeFiles/qtex.dir/test.cpp.o: ../test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qtex.dir/test.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtex.dir/test.cpp.o -c /Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp
 
-CMakeFiles/qtex.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtex.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp > CMakeFiles/qtex.dir/main.cpp.i
+CMakeFiles/qtex.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtex.dir/test.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp > CMakeFiles/qtex.dir/test.cpp.i
 
-CMakeFiles/qtex.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtex.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp -o CMakeFiles/qtex.dir/main.cpp.s
+CMakeFiles/qtex.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtex.dir/test.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp -o CMakeFiles/qtex.dir/test.cpp.s
 
-CMakeFiles/qtex.dir/myApp.cpp.o: CMakeFiles/qtex.dir/flags.make
-CMakeFiles/qtex.dir/myApp.cpp.o: ../myApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qtex.dir/myApp.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtex.dir/myApp.cpp.o -c /Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp
+CMakeFiles/qtex.dir/mtl.cpp.o: CMakeFiles/qtex.dir/flags.make
+CMakeFiles/qtex.dir/mtl.cpp.o: ../mtl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qtex.dir/mtl.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qtex.dir/mtl.cpp.o -c /Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp
 
-CMakeFiles/qtex.dir/myApp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtex.dir/myApp.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp > CMakeFiles/qtex.dir/myApp.cpp.i
+CMakeFiles/qtex.dir/mtl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qtex.dir/mtl.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp > CMakeFiles/qtex.dir/mtl.cpp.i
 
-CMakeFiles/qtex.dir/myApp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtex.dir/myApp.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp -o CMakeFiles/qtex.dir/myApp.cpp.s
+CMakeFiles/qtex.dir/mtl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qtex.dir/mtl.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp -o CMakeFiles/qtex.dir/mtl.cpp.s
 
 # Object files for target qtex
 qtex_OBJECTS = \
 "CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/qtex.dir/main.cpp.o" \
-"CMakeFiles/qtex.dir/myApp.cpp.o"
+"CMakeFiles/qtex.dir/test.cpp.o" \
+"CMakeFiles/qtex.dir/mtl.cpp.o"
 
 # External object files for target qtex
 qtex_EXTERNAL_OBJECTS =
 
 qtex: CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o
-qtex: CMakeFiles/qtex.dir/main.cpp.o
-qtex: CMakeFiles/qtex.dir/myApp.cpp.o
+qtex: CMakeFiles/qtex.dir/test.cpp.o
+qtex: CMakeFiles/qtex.dir/mtl.cpp.o
 qtex: CMakeFiles/qtex.dir/build.make
 qtex: /opt/homebrew/Cellar/qt/6.2.3_1/lib/QtWidgets.framework/Versions/A/QtWidgets
 qtex: /opt/homebrew/Cellar/qt/6.2.3_1/lib/QtGui.framework/Versions/A/QtGui

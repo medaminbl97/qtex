@@ -2,9 +2,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/qtex_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/qtex_autogen.dir/ParseCache.txt"
   "qtex_autogen"
-  "CMakeFiles/qtex.dir/main.cpp.o"
-  "CMakeFiles/qtex.dir/myApp.cpp.o"
+  "CMakeFiles/qtex.dir/mtl.cpp.o"
   "CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/qtex.dir/test.cpp.o"
   "qtex"
   "qtex.pdb"
 )

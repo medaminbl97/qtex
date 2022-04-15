@@ -112,22 +112,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/Box.h">
-			<Option target="qtex"/>
-		</Unit>
 		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/qtex_autogen/mocs_compilation.cpp">
 			<Option target="qtex"/>
 		</Unit>
-		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp">
+		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp">
 			<Option target="qtex"/>
 		</Unit>
-		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp">
+		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.h">
 			<Option target="qtex"/>
 		</Unit>
-		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.h">
-			<Option target="qtex"/>
-		</Unit>
-		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/myTimer.h">
+		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp">
 			<Option target="qtex"/>
 		</Unit>
 		<Unit filename="/Users/mohamedaminebellil/Desktop/PProjects/qtex/CMakeLists.txt">
