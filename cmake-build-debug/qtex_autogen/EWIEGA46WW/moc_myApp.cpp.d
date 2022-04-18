@@ -184,6 +184,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdarg.h \
   /Users/mohamedaminebellil/Desktop/PProjects/qtex/Box.h \
+  /Users/mohamedaminebellil/Desktop/PProjects/qtex/matrx.h \
+  /Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.h \
   /Users/mohamedaminebellil/Desktop/PProjects/qtex/myTimer.h \
   /opt/homebrew/Cellar/qt/6.2.3_1/lib/QtCore.framework/Versions/A/Headers/QEvent \
   /opt/homebrew/Cellar/qt/6.2.3_1/lib/QtCore.framework/Versions/A/Headers/QList \

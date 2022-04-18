@@ -9,7 +9,7 @@ public:
     std::chrono::system_clock::time_point sTime;
     std::chrono::system_clock::time_point eTime;
 public:
-    mytimer():duration(0){}
+    mytimer():duration(0){tick();}
     void tick(){ sTime = std::chrono::system_clock::now();};
     float getduration(){
         eTime = std::chrono::system_clock::now();

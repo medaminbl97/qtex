@@ -278,9 +278,33 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/Box.h",
+			"MU",
+			"EWIEGA46WW/moc_Box.cpp",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/matrx.h",
+			"MU",
+			"EWIEGA46WW/moc_matrx.cpp",
+			null
+		],
+		[
 			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.h",
 			"MU",
 			"EWIEGA46WW/moc_mtl.cpp",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.h",
+			"MU",
+			"EWIEGA46WW/moc_myApp.cpp",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/myTimer.h",
+			"MU",
+			"EWIEGA46WW/moc_myTimer.cpp",
 			null
 		]
 	],
@@ -335,12 +359,22 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/matrx.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp",
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp",
 			"MU",
 			null
 		]

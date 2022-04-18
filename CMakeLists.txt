@@ -17,7 +17,7 @@ endif()
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 
-#add_executable(qtex main.cpp myApp.h myApp.cpp Box.h myTimer.h mtl.h mtl.cpp)
-add_executable(qtex test.cpp mtl.h mtl.cpp)
+add_executable(qtex main.cpp myApp.h myApp.cpp Box.h myTimer.h mtl.h mtl.cpp matrx.h matrx.cpp)
+#add_executable(qtex test.cpp mtl.h mtl.cpp matrx.h matrx.cpp)
 
 target_link_libraries(qtex Qt6::Widgets)

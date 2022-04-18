@@ -13,19 +13,21 @@
 #include "mtl.h"
 
 
-
 class myApp : public QWidget {
     Q_OBJECT
 private:
-    Box *b,*b1;
     mytimer *timer;
+    Box* box;
+    int a = 0;
+    int b = 0;
 public:
-    explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr),timer(new mytimer){ setWindowTitle(title.c_str());
+    explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr),timer(new mytimer) { setWindowTitle(title.c_str());
         setMinimumSize(width,hight);
         resize(900,600);
         setPalette(QPalette(QColor(Qt::white)));
-    b = new Box(100);
-    b1 = new Box(300);}
+        box = new Box();
+    }
+
 
 public:
     void mousePressEvent(QMouseEvent* event) override;

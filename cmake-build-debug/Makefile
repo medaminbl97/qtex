@@ -142,6 +142,54 @@ qtex_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex_autogen.dir/build.make CMakeFiles/qtex_autogen.dir/build
 .PHONY : qtex_autogen/fast
 
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+matrx.o: matrx.cpp.o
+.PHONY : matrx.o
+
+# target to build an object file
+matrx.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/matrx.cpp.o
+.PHONY : matrx.cpp.o
+
+matrx.i: matrx.cpp.i
+.PHONY : matrx.i
+
+# target to preprocess a source file
+matrx.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/matrx.cpp.i
+.PHONY : matrx.cpp.i
+
+matrx.s: matrx.cpp.s
+.PHONY : matrx.s
+
+# target to generate assembly for a file
+matrx.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/matrx.cpp.s
+.PHONY : matrx.cpp.s
+
 mtl.o: mtl.cpp.o
 .PHONY : mtl.o
 
@@ -165,6 +213,30 @@ mtl.s: mtl.cpp.s
 mtl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/mtl.cpp.s
 .PHONY : mtl.cpp.s
+
+myApp.o: myApp.cpp.o
+.PHONY : myApp.o
+
+# target to build an object file
+myApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/myApp.cpp.o
+.PHONY : myApp.cpp.o
+
+myApp.i: myApp.cpp.i
+.PHONY : myApp.i
+
+# target to preprocess a source file
+myApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/myApp.cpp.i
+.PHONY : myApp.cpp.i
+
+myApp.s: myApp.cpp.s
+.PHONY : myApp.s
+
+# target to generate assembly for a file
+myApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/myApp.cpp.s
+.PHONY : myApp.cpp.s
 
 qtex_autogen/mocs_compilation.o: qtex_autogen/mocs_compilation.cpp.o
 .PHONY : qtex_autogen/mocs_compilation.o
@@ -190,30 +262,6 @@ qtex_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.s
 .PHONY : qtex_autogen/mocs_compilation.cpp.s
 
-test.o: test.cpp.o
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/test.cpp.s
-.PHONY : test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,15 +272,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... qtex_autogen"
 	@echo "... qtex"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... matrx.o"
+	@echo "... matrx.i"
+	@echo "... matrx.s"
 	@echo "... mtl.o"
 	@echo "... mtl.i"
 	@echo "... mtl.s"
+	@echo "... myApp.o"
+	@echo "... myApp.i"
+	@echo "... myApp.s"
 	@echo "... qtex_autogen/mocs_compilation.o"
 	@echo "... qtex_autogen/mocs_compilation.i"
 	@echo "... qtex_autogen/mocs_compilation.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
 .PHONY : help
 
 

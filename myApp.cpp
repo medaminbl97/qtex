@@ -1,10 +1,11 @@
+#include <QPainterPath>
 #include "myApp.h"
 
 
 
 void myApp::mousePressEvent(QMouseEvent* event)
 {
-    if (event->button() == Qt::LeftButton) std::cout << " Mouse Pressed" << std::endl;
+    if (event->button() == Qt::LeftButton) b = 255;
 
 }
 
@@ -14,29 +15,33 @@ void myApp::mouseMoveEvent(QMouseEvent *event) {
 
 void myApp::keyPressEvent(QKeyEvent *event) {
 
-    if (event->key() == Qt::Key_D) std::cout << " Key D Pressed" << std::endl;
+    if (event->key() == Qt::Key_D) {std::cout << a << std::endl;a+=10;}
 
 }
 
 void myApp::paintEvent(QPaintEvent *event) {
+
+    //path.addRect(20, 20, 60, 60);
+
+   QPolygon p;
+   p << QPoint(0,0);
+   p << QPoint(100,100);
+   p << QPoint(100,-100);
+
+
+
     QPainter painter(this);
-    painter.translate(QWidget::width()/2,QWidget::height()/2);
-    timer->tick();
-    //while (true) {
-        //if (timer->getduration() >= 0.1) {
-            b->rotate(0.05);
-            b->show(&painter);
+    painter.translate((int)QWidget::width()/2,(int)QWidget::height()/2);
+    painter.rotate(-90);
+    /*painter.fillRect(0, 0, 100, 100, Qt::white);
+    painter.setPen(QPen(QColor(79, 106, 25), 1, Qt::SolidLine,
+                        Qt::FlatCap, Qt::MiterJoin));*/
+    painter.setBrush(QColor(a, b, 0));
 
-            b1->rotate(0.01);
-            b1->show(&painter);
-
-           // b->h++;
+    painter.drawPolygon(p);
 
 
-            update();
-         //   break;
-        //}
-    //}
+    update();
 
 
 }

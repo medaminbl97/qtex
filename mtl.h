@@ -1,31 +1,40 @@
 #pragma once
 #include <iostream>
 #include <cmath>
+#include <QPainter>
+#include "myTimer.h"
+
+
+
+
 
 namespace mtl {
-
-    class unitV {
-
-    };
-
     class vertex {
     public:
         float x, y, z;
-        float abs;
+        float abs , abs2d;
+        float alpha;
+    private:
+        mytimer * timer;
     public:
-        vertex(float x , float y , float z) : x(x),y(y),z(z) { getabs();}
+        vertex(float x , float y , float z) : x(x),y(y),z(z), timer(new mytimer){ setabs(); setabs2d();setalpha();}
         vertex() : x(0),y(0),z(0), abs(0) {}
 
     public:
 
-        float getabs();
+        void setabs();
+        void setalpha(){alpha = acos(y/x);}
+        void setabs2d(){abs2d = sqrt(x*x+y*y);}
         vertex * getuv(){if(abs != 0 ) return new vertex((*this)/abs); return nullptr;}
-        friend std::ostream& operator <<( std::ostream& stream , const vertex& obj){ stream << "--> Vtx : "<< '(' << obj.x << ',' << obj.y << ',' << obj.z << ')' << "  --> Abs = " << obj.abs <<'\n'; return stream; }
-
+        void link(const vertex& other, QPainter* painter)const;
+        void draw(QPainter* painter)const;
+        friend std::ostream& operator <<( std::ostream& stream , vertex& obj){ obj.setabs();stream << "--> Vtx : "<< '(' << obj.x << ',' << obj.y << ',' << obj.z << ')' << "  --> Abs = " << obj.abs <<'\n'; return stream; }
+        void rotate (float v = 0.0001);
         vertex operator + (const vertex& other)const;
         vertex operator - (const vertex& other)const;
         float operator | (const vertex& other)const;
-        vertex operator * (const vertex& other)const;
+        //vertex operator * (const vertex& other)const;
+        vertex operator * (vertex matrix [3]);
         vertex operator * (float val)const;
         vertex operator / (float val)const;
 
@@ -33,6 +42,20 @@ namespace mtl {
 
     };
 
+    class surface {
+    private:
+        vertex* vs;
+        vertex normalvector;
+    public:
+        surface(vertex* vs) : vs(vs) {updateNormalVectotr();}
+        void draw(QPainter* painter);
+        vertex& updateNormalVectotr();
+
+    };
+
+
+
 
 
 }
+

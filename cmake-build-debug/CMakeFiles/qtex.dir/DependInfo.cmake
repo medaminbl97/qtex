@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/mohamedaminebellil/Desktop/PProjects/qtex/main.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/main.cpp.o"
+  "/Users/mohamedaminebellil/Desktop/PProjects/qtex/matrx.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/matrx.cpp.o"
   "/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/mtl.cpp.o"
+  "/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/myApp.cpp.o"
   "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/qtex_autogen/mocs_compilation.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o"
-  "/Users/mohamedaminebellil/Desktop/PProjects/qtex/test.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
