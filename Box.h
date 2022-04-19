@@ -10,18 +10,17 @@ using namespace mtl;
 class Box {
 public:
 
-    vertex vcs[4] = {vertex(100,100,0),vertex(100,-100,0),vertex(-100,-100,0),vertex(-100,100,0)};
+    vertex vcs[4] = {vertex(100,100,0),vertex(-100,100,0),vertex(-100,-100,0)};
     matrx * m;
-    vlinker *linker;
-    double alpha = 0;
+    surface* s;
     mytimer *timer;
 
 
 public:
-    Box(): timer(new mytimer), m(new matrx(vcs,4)), linker(new vlinker(vcs,4)){}
+    Box(): timer(new mytimer), m(new matrx(vcs,3)), s(new surface(vcs)) {}
 
     void show(QPainter * painter){
-        linker->link(painter);
+        s->draw(painter);
     }
 
 };

@@ -5,13 +5,11 @@
 
 
 int main(){
-    mtl::vertex v(100,100,0);
-    matrx mtx(&v,1);
-    std::cout << v << "\n------------------------\n";
+    mtl::vertex v(195 ,83 ,255);
 
-    while(1){
-    mtx.rotatez(1);
-    std::cout << v ;}
+
+    std::cout << vertex((int)(195*0.5),(int)83*0.5,(int)255*0.5);
+    std::cout << (int)(195*0.5);
 
 
 

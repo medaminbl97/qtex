@@ -17,15 +17,21 @@ class myApp : public QWidget {
     Q_OBJECT
 private:
     mytimer *timer;
-    Box* box;
-    int a = 0;
-    int b = 0;
+    int a = 0, b = 0;
+    //Box* box;
+    vertex vs[3];
+    matrx *m;
 public:
     explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr),timer(new mytimer) { setWindowTitle(title.c_str());
         setMinimumSize(width,hight);
         resize(900,600);
         setPalette(QPalette(QColor(Qt::white)));
-        box = new Box();
+        //box = new Box();
+        vs[0]=vertex(100,0,0);
+        vs[1]=vertex(0,100,0);
+        vs[2]=vs[0]*vs[1]/100;
+
+        m = new matrx(vs,3);
     }
 
 
