@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/mohamedaminebellil/Desktop/PProjects/qtex/mtl.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/mtl.cpp.o"
   "/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/myApp.cpp.o"
   "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/qtex_autogen/mocs_compilation.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o"
+  "/Users/mohamedaminebellil/Desktop/PProjects/qtex/shape3d.cpp" "/Users/mohamedaminebellil/Desktop/PProjects/qtex/cmake-build-debug/CMakeFiles/qtex.dir/shape3d.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

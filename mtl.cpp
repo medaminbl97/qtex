@@ -1,4 +1,6 @@
 #include "mtl.h"
+#include <QPen>
+
 
 
 namespace mtl{
@@ -58,30 +60,35 @@ namespace mtl{
 
 
     void surface::draw(QPainter *painter) {
+        if(updateNormalVector().z < 0){
         QPolygon polygon;
-        polygon << QPoint(vs[0].y,vs[0].x);
-        polygon << QPoint(vs[1].y,vs[1].x);
-        polygon << QPoint(vs[2].y,vs[2].x);
+        QPen pen;
+        polygon << QPoint(vs[0]->y,vs[0]->x);
+        polygon << QPoint(vs[1]->y,vs[1]->x);
+        polygon << QPoint(vs[2]->y,vs[2]->x);
         updatecolor();
-        painter ->setBrush(QColor((int)(updatecolor().x),(int)(updatecolor().y),(int)(updatecolor().z)));
-        painter->drawPolygon(polygon);
 
-        painter->drawLine(0,0,normalvector.y,normalvector.x);
+        pen.setWidth(0);
+        painter->setPen(pen);
+        painter ->setBrush(QColor((int)(updatecolor().x),(int)(updatecolor().y),(int)(updatecolor().z)));
+        painter->drawPolygon(polygon);}
+
+        //painter->drawLine(0,0,normalvector.y/100,normalvector.x/100);
     }
 
-    vertex& surface::updateNormalVectotr() {
+    vertex surface::updateNormalVector() {
         vertex v1,v2;
-        v1 = *vs - *(vs+1);
-        v2 = *vs - *(vs+2);
-        normalvector = v1 * v2;
-        return normalvector;
+        v1 = **vs - **(vs+2);
+        v2 = **vs - **(vs+1);
+        normalvector = v2 * v1;
+        return *normalvector.getuv();
     }
 
     vertex surface::updatecolor() {
         vertex z(0,0,-1);
-        float a = z|*updateNormalVectotr().getuv();
-        std::cout << "a = " << abs(a) << std::endl;
-        std::cout << *updateNormalVectotr().getuv();
+        float a = z|*updateNormalVector().getuv();
+        //std::cout << "a = " << abs(a) << std::endl;
+        //std::cout << *updateNormalVector().getuv();
         vertex col = color*abs(a);
         return col;
     }

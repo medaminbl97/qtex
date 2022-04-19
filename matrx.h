@@ -6,13 +6,12 @@ using namespace mtl;
 
     class matrx {
     public:
-        vertex *verts;
+        std::vector<vertex> * vertecies;
         int size;
         mytimer *tx, *ty, *tz;
         float ax, ay, az;
     public:
-        matrx(mtl::vertex *verts, int size) : verts(verts), tx(new mytimer), ty(new mytimer), tz(new mytimer),
-                                               size(size), ax(0.01), ay(0.01), az(0.01) {}
+        matrx(std::vector<vertex> * verts) : vertecies(verts), tx(new mytimer), ty(new mytimer), tz(new mytimer), ax(0.01), ay(0.01), az(0.01) {}
 
         void rotatex(float v = 0.01);
 

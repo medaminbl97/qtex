@@ -11,6 +11,7 @@
 #include "Box.h"
 #include "myTimer.h"
 #include "mtl.h"
+#include "shape3d.h"
 
 
 class myApp : public QWidget {
@@ -18,20 +19,19 @@ class myApp : public QWidget {
 private:
     mytimer *timer;
     int a = 0, b = 0;
-    //Box* box;
-    vertex vs[3];
-    matrx *m;
+    shape3d * s;
+
 public:
     explicit myApp(const std::string& title = "myApp",int width = 600 , int hight = 300): QWidget(nullptr),timer(new mytimer) { setWindowTitle(title.c_str());
         setMinimumSize(width,hight);
         resize(900,600);
         setPalette(QPalette(QColor(Qt::white)));
-        //box = new Box();
-        vs[0]=vertex(100,0,0);
-        vs[1]=vertex(0,100,0);
-        vs[2]=vs[0]*vs[1]/100;
+        s = new shape3d("nescafezp.obj");
+        s->setup();
+        s->printvertecies();
+        s->scale(5000);
+        s->printvertecies();
 
-        m = new matrx(vs,3);
     }
 
 

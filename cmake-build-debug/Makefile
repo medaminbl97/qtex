@@ -262,6 +262,30 @@ qtex_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.s
 .PHONY : qtex_autogen/mocs_compilation.cpp.s
 
+shape3d.o: shape3d.cpp.o
+.PHONY : shape3d.o
+
+# target to build an object file
+shape3d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/shape3d.cpp.o
+.PHONY : shape3d.cpp.o
+
+shape3d.i: shape3d.cpp.i
+.PHONY : shape3d.i
+
+# target to preprocess a source file
+shape3d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/shape3d.cpp.i
+.PHONY : shape3d.cpp.i
+
+shape3d.s: shape3d.cpp.s
+.PHONY : shape3d.s
+
+# target to generate assembly for a file
+shape3d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qtex.dir/build.make CMakeFiles/qtex.dir/shape3d.cpp.s
+.PHONY : shape3d.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,6 +311,9 @@ help:
 	@echo "... qtex_autogen/mocs_compilation.o"
 	@echo "... qtex_autogen/mocs_compilation.i"
 	@echo "... qtex_autogen/mocs_compilation.s"
+	@echo "... shape3d.o"
+	@echo "... shape3d.i"
+	@echo "... shape3d.s"
 .PHONY : help
 
 

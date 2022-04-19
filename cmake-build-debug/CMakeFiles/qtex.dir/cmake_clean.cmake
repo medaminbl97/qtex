@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/qtex.dir/mtl.cpp.o"
   "CMakeFiles/qtex.dir/myApp.cpp.o"
   "CMakeFiles/qtex.dir/qtex_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/qtex.dir/shape3d.cpp.o"
   "qtex"
   "qtex.pdb"
 )

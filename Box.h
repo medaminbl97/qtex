@@ -11,16 +11,13 @@ class Box {
 public:
 
     vertex vcs[4] = {vertex(100,100,0),vertex(-100,100,0),vertex(-100,-100,0)};
-    matrx * m;
-    surface* s;
-    mytimer *timer;
+
 
 
 public:
-    Box(): timer(new mytimer), m(new matrx(vcs,3)), s(new surface(vcs)) {}
+    Box(){}
 
     void show(QPainter * painter){
-        s->draw(painter);
     }
 
 };

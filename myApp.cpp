@@ -5,7 +5,7 @@
 
 void myApp::mousePressEvent(QMouseEvent* event)
 {
-    if (event->button() == Qt::LeftButton) std::cout << vs[2];
+    if (event->button() == Qt::LeftButton) std::cout << "Mouse " << std::endl;
 
 }
 
@@ -23,11 +23,8 @@ void myApp::paintEvent(QPaintEvent *event) {
     QPainter painter(this);
     painter.translate((int)QWidget::width()/2,(int)QWidget::height()/2);
     painter.rotate(-90);
-
-    m->rotateall();
-    vs[0].draw(&painter);
-    vs[1].draw(&painter);
-    vs[2].draw(&painter);
+    s->draw(&painter);
+    s->rotate('A');
 
 
 

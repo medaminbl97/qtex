@@ -44,15 +44,22 @@ namespace mtl {
 
     class surface {
     private:
-        vertex* vs;
+        vertex* vs[3];
         vertex normalvector;
     public:
         vertex color;
     public:
-        surface(vertex* vs) : vs(vs) , color(195 ,83 ,255){updateNormalVectotr();}
+        surface(vertex color = vertex (195 ,83 ,255)) : color(color){ updateNormalVector();}
+        surface(vertex* v0,vertex* v1, vertex* v2 ,vertex color = vertex (195 ,83 ,255)) :color(color){ vs[0] = v0 ;  vs[1] = v1 ; vs[2] = v2 ; updateNormalVector();}
         void draw(QPainter* painter);
+        void print(){
+            std::cout << "-------------\n"<< "Surface " << std::endl;
+            for (int i = 0; i < 3; ++i) {
+                std::cout << *vs[i] ;
+            }
+            std::cout << "End Surface" << "--------------" << std::endl; }
         vertex updatecolor();
-        vertex& updateNormalVectotr();
+        vertex updateNormalVector();
 
     };
 

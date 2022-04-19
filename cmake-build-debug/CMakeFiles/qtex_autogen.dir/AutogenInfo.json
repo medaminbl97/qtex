@@ -278,12 +278,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/Box.h",
-			"MU",
-			"EWIEGA46WW/moc_Box.cpp",
-			null
-		],
-		[
 			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/matrx.h",
 			"MU",
 			"EWIEGA46WW/moc_matrx.cpp",
@@ -305,6 +299,12 @@
 			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/myTimer.h",
 			"MU",
 			"EWIEGA46WW/moc_myTimer.cpp",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/shape3d.h",
+			"MU",
+			"EWIEGA46WW/moc_shape3d.cpp",
 			null
 		]
 	],
@@ -375,6 +375,11 @@
 		],
 		[
 			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/myApp.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/mohamedaminebellil/Desktop/PProjects/qtex/shape3d.cpp",
 			"MU",
 			null
 		]
