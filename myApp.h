@@ -26,10 +26,10 @@ public:
         setMinimumSize(width,hight);
         resize(900,600);
         setPalette(QPalette(QColor(Qt::white)));
-        s = new shape3d("nescafezp.obj");
+        s = new shape3d("diamond.obj");
         s->setup();
         s->printvertecies();
-        s->scale(5000);
+        s->scale(300);
         s->printvertecies();
 
     }

@@ -15,7 +15,10 @@ void myApp::mouseMoveEvent(QMouseEvent *event) {
 
 void myApp::keyPressEvent(QKeyEvent *event) {
 
-    if (event->key() == Qt::Key_D) {std::cout << a << std::endl;a+=10;}
+    if (event->key() == Qt::Key_A) s->arotation = !s->arotation;
+    if (event->key() == Qt::Key_X) s->xrotation = !s->xrotation;
+    if (event->key() == Qt::Key_Y) s->yrotation = !s->yrotation;
+    if (event->key() == Qt::Key_Z) s->zrotation = !s->zrotation;
 
 }
 
@@ -25,6 +28,9 @@ void myApp::paintEvent(QPaintEvent *event) {
     painter.rotate(-90);
     s->draw(&painter);
     s->rotate('A');
+    s->rotate('X');
+    s->rotate('Y');
+    s->rotate('Z');
 
 
 

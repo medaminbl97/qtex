@@ -51,10 +51,10 @@ void shape3d::setSurfaces() {
 
 void shape3d::rotate(const char Axis) {
     switch (Axis) {
-        case 'X' : rMtarix.rotatex(); break;
-        case 'Y' : rMtarix.rotatey(); break;
-        case 'Z' : rMtarix.rotatez(); break;
-        case 'A' : rMtarix.rotateall(); break;
+        case 'X' : if(xrotation) rMtarix.rotatex(); break;
+        case 'Y' : if(yrotation) rMtarix.rotatey(); break;
+        case 'Z' : if(zrotation) rMtarix.rotatez(); break;
+        case 'A' : if(arotation) rMtarix.rotateall(); break;
 
     }
 

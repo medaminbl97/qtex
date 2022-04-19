@@ -10,7 +10,7 @@
 
 int main(){
     shape3d * s;
-    s = new shape3d("cube.obj");
+    s = new shape3d("torus.obj");
     s->setVertecies();
     s->setSurfaces();
     s->printvertecies();

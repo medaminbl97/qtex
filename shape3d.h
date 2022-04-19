@@ -20,6 +20,7 @@ private:
 protected:
     std::string filename;
 public:
+    bool xrotation = false, yrotation = false ,zrotation = false, arotation = false;
     matrx rMtarix;
 public:
     shape3d(const char * filename):filename(filename), vertecies(new std::vector<vertex>),surfaces(new std::vector<surface>), rMtarix(vertecies){}
